@@ -15,18 +15,18 @@
   />
 </head>
 <body>
-    <div id="wrapper" class="w-screen h-screen  flex justify-center items-center bg-[#E966A0]">
-        <div class="container lg:w-[20%] w-[90%] lg:h-3/5 h-[66%] bg-[#2B2730] rounded-lg flex flex-col p-8 text-white ">
-            <h2 class="text-3xl mb-3 text-fuchsia-300">Currency Converter</h2>
-                <form action="" class="flex flex-col mt-12 h-4/5 justify-start gap-5">
+    <div id="wrapper" class="relative w-screen h-screen  flex justify-center items-center bg-[#E966A0]">
+        <div class="container lg:w-[20%] w-[90%] lg:h-2/4 h-[50%] bg-[#2B2730] rounded-lg flex flex-col p-8 text-white ">
+            <h2 class="lg:text-3xl text-2xl mb-3 text-fuchsia-300">Currency Converter</h2>
+                <form action="" class="flex flex-col lg:mt-3 h-4/5 justify-start gap-5">
                     <label for="amount">Enter Amount</label>
-                    <input class="bg-transparent border rounded-md w-full p-3 text-lg " value="1" type="text">
+                    <input class="bg-transparent border rounded-md w-full lg:p-3 p-2 mt-[-1rem] text-lg " value="1" type="text">
     
                     <div class="choices flex items-center justify-between ">
                         <div class="select-container">
                             <label for="from">From</label>
                             <div class="from text-black border flex rounded p-1">
-                                <img class="w-8" src="https://flagsapi.com/US/flat/64.png" />
+                                <img class="lg:w-8 w-5" src="https://flagsapi.com/US/flat/64.png" />
                                 <select value="" class="bg-transparent text-white">
                                     <option name="" id="">INR</option>
                                     <option selected name="" id="">USD</option>
@@ -40,7 +40,7 @@
                         <div class="select-container">
                             <label for="to">To</label>
                             <div class="to text-black flex border rounded p-1">
-                                <img class="w-8" src="https://flagsapi.com/IN/flat/64.png" />
+                                <img class="lg:w-8 w-5" src="https://flagsapi.com/IN/flat/64.png" />
                                 <select class="bg-transparent text-white" value="">
                                     <option selected name="" id="">INR</option>
                                     <option name="" id="">USD</option>
@@ -50,12 +50,15 @@
                         </div>
                     </div>
     
-                    <p id="msg">1 USD = 80 INR</p>
+                    <p id="msg" class="text-center border lg:mt-3 lg:w-2/4 mx-auto bg-[#31363F] p-1">1 USD = 80 INR</p>
     
-                    <button class="w-full bg-violet-600 rounded-lg p-3 mt-5 text-xl">Get Exchange Rate</button>
+                    <button class="w-full bg-violet-600 rounded-lg p-2 lg:mt-5 lg:text-xl text-lg">Get Exchange Rate</button>
                 </form>
-            
         </div>
+        
+        <footer class="bg-[#2B2730] min-w-full p-1 text-center absolute bottom-0 left-50% text-white">
+            <p>Made With &hearts; By<i>@rohit.web</i></p>
+        </footer>
     </div>
 
 
