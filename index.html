@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CurrencyConverter</title>
+    <link rel="shortcut icon" href="icom.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -20,32 +21,24 @@
             <h2 class="lg:text-3xl text-2xl mb-3 text-fuchsia-300">Currency Converter</h2>
                 <form action="" class="flex flex-col lg:mt-3 h-4/5 justify-start gap-5">
                     <label for="amount">Enter Amount</label>
-                    <input class="bg-transparent border rounded-md w-full lg:p-3 p-2 mt-[-1rem] text-lg " value="1" type="text">
+                    <input class="amount bg-transparent border rounded-md w-full lg:p-3 p-2 mt-[-1rem] text-lg " value="1" type="text">
     
                     <div class="choices flex items-center justify-between ">
-                        <div class="select-container">
+                        <div class="dropdown">
                             <label for="from">From</label>
                             <div class="from text-black border flex rounded p-1">
                                 <img class="lg:w-8 w-5" src="https://flagsapi.com/US/flat/64.png" />
-                                <select value="" class="bg-transparent text-white">
-                                    <option name="" id="">INR</option>
-                                    <option selected name="" id="">USD</option>
-                                    <option name="" id="">AUD</option>
-                                </select>
+                                <select name="from" class="outline-none bg-[#2B2730] text-white"></select>
                             </div>
                         </div>
     
                         <i class="fa-sharp fa-solid fa-arrow-right-arrow-left text-lg mt-7"></i>
         
-                        <div class="select-container">
+                        <div class="dropdown">
                             <label for="to">To</label>
                             <div class="to text-black flex border rounded p-1">
                                 <img class="lg:w-8 w-5" src="https://flagsapi.com/IN/flat/64.png" />
-                                <select class="bg-transparent text-white" value="">
-                                    <option selected name="" id="">INR</option>
-                                    <option name="" id="">USD</option>
-                                    <option name="" id="">AUD</option>
-                                </select>
+                                <select name="to" class="bg-[#2B2730] text-white outline-none"></select>
                             </div>
                         </div>
                     </div>
@@ -57,12 +50,12 @@
         </div>
         
         <footer class="bg-[#2B2730] min-w-full p-1 text-center absolute bottom-0 left-50% text-white">
-            <p>Made With &hearts; By<i>@rohit.web</i></p>
+            <p>Made With &hearts; By <i>@rohit.web</i></p>
         </footer>
     </div>
 
 
-    <script src="app.js"></script>
     <script src="codes.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
